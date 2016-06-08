@@ -8,4 +8,19 @@
 //
 // For Go 1.7 and higher, it uses testing.T's run method. For lower versions
 // it mimics subtests by logging additional information.
+//
+//    package foo
+//    
+//    import "github.com/mpvl/subtest"
+//    
+//    var testCases = ...
+//    
+//    func TestFoo(t *testing.T) {
+//        for _, tc := range testCases {
+//            subtest.Run(t, tc.name, func(t *testing.T) {
+//                tc.doTest()
+//            })
+//        }
+//    }
+//
 package subtest
