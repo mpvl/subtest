@@ -10,11 +10,11 @@
 // it mimics subtests by logging additional information.
 //
 //    package foo
-//    
+//
 //    import "github.com/mpvl/subtest"
-//    
+//
 //    var testCases = ...
-//    
+//
 //    func TestFoo(t *testing.T) {
 //        for _, tc := range testCases {
 //            subtest.Run(t, tc.name, func(t *testing.T) {
@@ -22,5 +22,4 @@
 //            })
 //        }
 //    }
-//
 package subtest
